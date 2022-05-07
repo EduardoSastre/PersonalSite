@@ -60,10 +60,13 @@ p {
   position: absolute;
   top: 5vh;
   left: 65vw;
+  width: 10%;
 }
 
 .Top-Container__Description {
   font-size: 2.5rem;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .Top-Container__BottomCloud {
@@ -71,6 +74,7 @@ p {
   left: 20vw;
   bottom: 25vh;
   z-index: 5;
+  width: 10%;
 }
 
 .Top-Container__BottomCloud2 {
@@ -78,6 +82,7 @@ p {
   right: 25vw;
   bottom: 20vh;
   z-index: 30;
+  width: 10%;
 }
 
 .Top-Container__mountain {
@@ -92,11 +97,12 @@ p {
   position: absolute;
   bottom: 0;
   left: 15vw;
+  width: 45%;
   z-index: 20;
 }
 
 .skill-row {
-  width: 50vw;
+  width: 50%;
   margin: 100px auto;
   padding: 50px;
   text-align: left;
@@ -107,18 +113,21 @@ p {
 
 .skill-row p {
   padding-bottom: 60px;
+  font-size: 1rem;
 }
 
 .img1 {
   width: 25%;
   float: left;
   margin-right: 30px;
+  margin-bottom: 10px;
 }
 
 .img2 {
   width: 25%;
   float: right;
   margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 .profile {
@@ -128,12 +137,14 @@ p {
 .profile__description {
   width: 30%;
   margin: 0 auto;
+  font-size: 1rem;
 }
 
 .profile__MyImg {
   box-sizing: border-box;
   border-radius: 100%;
   border: 8px solid #B3D9D9;
+  width: 20%;
 }
 
 .contact-me__description {
@@ -182,19 +193,104 @@ p {
   font-size: 0.85rem;
 }
 
-@media only screen and ( max-width: 1220px ) {
+/* @media only screen and ( min-width: 1200px ) {
+  .Top-Container {
+    height: 100vh;
+  }
+} */
+
+/* @media only screen and ( max-width: 1199px ) {
+  .Top-Container {
+    height: 110vh;
+  }
+} */
+
+@media only screen and ( max-width: 1600px ) {
   .Top-Container__mountain {
-    position: absolute;
-    bottom: 0;
-    right: 5vw;
-    width: 45%;
-    z-index: 10;
+    right: 10vw;
   }
 
   .Top-Container__mountain2 {
-    position: absolute;
-    bottom: 0;
-    left: 5vw;
-    z-index: 20;
+    left: 10vw;
+  }
+
+  .profile__MyImg {
+    width: 30%;
+  }
+
+  .skill-row-img {
+    width: 30%;
+  }
+}
+
+@media only screen and ( max-width: 1004px ) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .Top-Container__Description {
+    font-size: 2rem;
+  }
+
+  .Top-Container__mountain {
+    right: 0;
+    width: 55%;
+  }
+
+  .Top-Container__mountain2 {
+    left: 0;
+    width: 65%;
+  }
+
+  .profile__description {
+    width: 50%;
+  }
+
+  .contact-me__description {
+    width: 50%;
+  }
+
+  .Top-Container__TopCloud {
+    width: 20%;
+  }
+
+  .Top-Container__BottomCloud {
+    width: 20%;
+  }
+
+  .Top-Container__BottomCloud2 {
+    width: 20%;
+  }
+
+  .skill-row-img {
+    width: 30%;
+  }
+
+}
+
+@media only screen and ( max-width: 750px ) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .Top-Container__Description {
+    font-size: 1.5rem;
+  }
+
+  .profile__MyImg {
+    width: 45%;
+  }
+
+  .profile__description {
+    width: 70%;
+  }
+
+  .skill-row {
+    width: 60%;
+    padding: 15px 50px;
+  }
+
+  .skill-row-img {
+    width: 35%;
   }
 }

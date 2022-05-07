@@ -12,12 +12,12 @@ tl.to('.Top-Container__TopCloud', {
 
 tl.to('.Top-Container__BottomCloud', {
   duration: 20,
-  x: ww*0.60
+  x: ww*0.50
 }, 0);
 
 tl.to('.Top-Container__BottomCloud2', {
   duration: 20,
-  x: ww*-0.55
+  x: ww*-0.50
 }, 0);
 
 gsap.from('h1', {
@@ -36,25 +36,49 @@ gsap.from('p', {
   y: +50
 }, 0);
 
-gsap.from('.skill-row1', {
-  x: -0.10*ww,
-  opacity: 0,
-  duration: 2,
-  scrollTrigger: {
-    trigger: '.skill-row1',
-    start: "center 80%",
-  }
-});
+if ( ww > 420 )
+{
+  gsap.from('.skill-row1', {
+    x: -0.10*ww,
+    opacity: 0,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.skill-row1',
+      start: "center 80%",
+    }
+  });
 
-gsap.from('.skill-row2', {
-  x: 0.10*ww,
-  opacity: 0,
-  duration: 2,
-  scrollTrigger: {
-    trigger: '.skill-row2',
-    start: "center 80%",
-  }
-});
+  gsap.from('.skill-row2', {
+    x: 0.10*ww,
+    opacity: 0,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.skill-row2',
+      start: "center 80%",
+    }
+  });
+}
+else{
+  gsap.from('.skill-row1', {
+    x: -0.05*ww,
+    opacity: 0,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.skill-row1',
+      start: "center 80%",
+    }
+  });
+
+  gsap.from('.skill-row2', {
+    x: 0.05*ww,
+    opacity: 0,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.skill-row2',
+      start: "center 80%",
+    }
+  });
+}
 
 gsap.from('.profile__MyImg', {
   scale: 0,
